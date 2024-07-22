@@ -1,11 +1,11 @@
-/** 
+/**
  * Convert group name, token name and possible prefix into camelCased string, joining everything together
  */
 Pulsar.registerFunction(
   "readableVariableName",
   function (token, tokenGroup, prefix) {
-    // Skip tokens named "global"
-    if (token.name.toLowerCase() === "global") {
+    // Skip tokens with "global" in their name
+    if (token.name.toLowerCase().includes("global")) {
       return null;
     }
 
@@ -61,7 +61,7 @@ Pulsar.registerFunction("gradientAngle", function(from, to) {
 
 /**
  * Behavior configuration of the exporter
- * Prefixes: Add prefix for each category of the tokens. For example, all colors can start with "color, if needed"
+ * Prefixes: Add prefix for each category of the tokens. For example, all colors can start with "color", if needed
  */
 Pulsar.registerPayload("behavior", {
   colorTokenPrefix: "color",
@@ -74,15 +74,15 @@ Pulsar.registerPayload("behavior", {
 
 /** Describe complex shadow token */
 Pulsar.registerFunction("shadowDescription", function (shadowToken) {
-  // Skip tokens named "global"
-  if (shadowToken.name.toLowerCase() === "global") {
+  // Skip tokens with "global" in their name
+  if (shadowToken.name.toLowerCase().includes("global")) {
     return "";
   }
 
   let connectedShadow = "transparent";
   if (shadowToken.shadowLayers) {
     connectedShadow = shadowToken.shadowLayers.reverse().map((shadow) => {
-        return shadowTokenValue(shadow);
+      return shadowTokenValue(shadow);
     }).join(", ");
   } else {
     return shadowTokenValue(shadowToken);
