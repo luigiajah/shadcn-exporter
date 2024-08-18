@@ -1,0 +1,74 @@
+@layer base {
+  :root {
+    --card: 0 0% 98.8%;
+    --ring: 231 5.9% 57.1%;
+    --input: 231 10.2% 75.1%;
+    --muted: 0 0% 97.6%;
+    --accent: 240 96.2% 10.4%;
+    --border: 240 95.7% 9.2%;
+    --chart-1: 237 66.3% 48.8%;
+    --chart-2: 191 91.4% 36.7%;
+    --chart-3: 24 100% 46.5%;
+    --chart-4: 272 47% 50.4%;
+    --chart-5: 152 57.3% 37.6%;
+    --popover: 0 0% 97.6%;
+    --primary: 237 66.3% 48.8%;
+    --secondary: 240 13% 95.5%;
+    --background: 0 0% 98.8%;
+    --foreground: 210 12.5% 12.5%;
+    --destructive: 358 67.2% 54.5%;
+    --card-foreground: 210 12.5% 12.5%;
+    --muted-foreground: 220 5.9% 40%;
+    --accent-foreground: 210 12.5% 12.5%;
+    --custom-accent-info: 221 100% 96.3%;
+    --custom-accent-teal: 173 80.3% 35.9%;
+    --popover-foreground: 210 12.5% 12.5%;
+    --primary-foreground: 0 0% 100%;
+    --secondary-foreground: 210 12.5% 12.5%;
+    --custom-accent-success: 139 57.1% 94.5%;
+    --custom-accent-warning: 34 100% 91.8%;
+    --custom-secondary-hover: 240 11.1% 92.9%;
+    --destructive-foreground: 0 0% 100%;
+    --custom-accent-destructive: 0 100% 96.9%;
+    --custom-accent-info-foreground: 232 68.1% 54.5%;
+    --custom-accent-success-foreground: 155 40.5% 16.5%;
+    --custom-accent-warning-foreground: 16 50.4% 22.9%;
+    --custom-accent-destructive-foreground: 351 62.6% 24.1%;
+  }
+  .dark {
+    --card: 0 0% 98.8%;
+    --ring: 231 5.9% 57.1%;
+    --input: 231 10.2% 75.1%;
+    --muted: 0 0% 97.6%;
+    --accent: 240 96.2% 10.4%;
+    --border: 240 95.7% 9.2%;
+    --chart-1: 237 66.3% 48.8%;
+    --chart-2: 191 91.4% 36.7%;
+    --chart-3: 24 100% 46.5%;
+    --chart-4: 272 47% 50.4%;
+    --chart-5: 152 57.3% 37.6%;
+    --popover: 0 0% 97.6%;
+    --primary: 237 66.3% 48.8%;
+    --secondary: 240 13% 95.5%;
+    --background: 0 0% 98.8%;
+    --foreground: 210 12.5% 12.5%;
+    --destructive: 358 75.1% 59%;
+    --card-foreground: 210 12.5% 12.5%;
+    --muted-foreground: 220 5.9% 40%;
+    --accent-foreground: 210 12.5% 12.5%;
+    --custom-accent-info: 221 100% 96.3%;
+    --custom-accent-teal: 173 80.3% 35.9%;
+    --popover-foreground: 210 12.5% 12.5%;
+    --primary-foreground: 0 0% 100%;
+    --secondary-foreground: 210 12.5% 12.5%;
+    --custom-accent-success: 139 57.1% 94.5%;
+    --custom-accent-warning: 34 100% 91.8%;
+    --custom-secondary-hover: 240 11.1% 92.9%;
+    --destructive-foreground: 0 0% 100%;
+    --custom-accent-destructive: 0 100% 96.9%;
+    --custom-accent-info-foreground: 232 68.1% 54.5%;
+    --custom-accent-success-foreground: 155 40.5% 16.5%;
+    --custom-accent-warning-foreground: 16 50.4% 22.9%;
+    --custom-accent-destructive-foreground: 351 62.6% 24.1%;
+  }
+}
